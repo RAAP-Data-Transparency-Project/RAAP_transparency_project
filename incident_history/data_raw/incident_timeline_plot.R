@@ -58,7 +58,7 @@ incident_data <- left_join(incident_data, line_pos, by = "date_occurred")
 
 # Offset text as necessary for incidents occurring in same month
 
-text_offset <- 0.5
+text_offset <- 0.1
 
 incident_data$month_count <- ave(incident_data$month_year_occurred == incident_data$month_year_occurred,
                                  incident_data$month_year_occurred,
