@@ -1,27 +1,27 @@
 ﻿incident_type,date_occurred,chemical,amount,units,date_public_notified
-spill_leak,1/30/17,acidic water,unspecified,,
-spill_leak,4/15/17,acidic water,unspecified,,
-spill_leak,5/1/17,ammonia,says zero,gal,
-spill_leak,8/17/17,waste propellant,500,lbs,
-spill_leak,9/8/17,muddy water,33300,gal,
-spill_leak,9/25/17,muddy water,18000,gal,
-spill_leak,10/17/17,ntiric acid,unknown,,10/17/17
-spill_leak,10/19/17,nitrocellulose,unknown,,
-spill_leak,11/27/17,water containing nitrocellulose,unspecified,,
-spill_leak,2/14/18,wastewater,"630,000",gal,
-spill_leak,3/6/18,"""sludge""",unknown,,
-fire,6/11/18,,,,6/11/18
-spill_leak,8/2/18,muddy water,4000,gal,
-spill_leak,9/4/18,ammonia,,,9/5/18
-spill_leak,10/3/18,anhydrous ammonia,unspecified,,
-spill_leak,10/6/18,propellant slurry,200,lbs,
-spill_leak,12/11/18,water containing nitrocellulose,56700,gal,
-spill_leak,4/25/19,wastewater containing 77 ppm nitroglycerin,unspecified,,
-fire,6/6/19,,,,7/9/20
-spill_leak,7/8/19,Industrial Wastewater,unknown,,
-spill_leak,8/22/19,nitric acid,110,gal,
-spill_leak,9/16/19, nitric acid/sulfuric acid mixture,161,gal,
-spill_leak,7/7/20,"Antifreeze, Oil, other chemicals",unknown,,
-overflow,11/11/20,Industrial Processed Wastewater & sewage,1000,gal,
+spill_leak,1/30/17,Acidic water,unspecified,,
+spill_leak,4/15/17,Acidic water,unspecified,,
+spill_leak,5/1/17,Ammonia,says zero,gal,
+spill_leak,8/17/17,Waste propellant,500,lbs,
+spill_leak,9/8/17,Muddy water,33300,gal,
+spill_leak,9/25/17,Muddy water,18000,gal,
+spill_leak,10/17/17,Nitric acid,unknown,,10/17/17
+spill_leak,10/19/17,Nitrocellulose,unknown,,
+spill_leak,11/27/17,Water containing nitrocellulose,unspecified,,
+spill_leak,2/14/18,Wastewater,"630,000",gal,
+spill_leak,3/6/18,Sludge,unknown,,
+fire,6/11/18,Fire,,,6/11/18
+spill_leak,8/2/18,Muddy water,4000,gal,
+spill_leak,9/4/18,Ammonia,,,9/5/18
+spill_leak,10/3/18,Anhydrous ammonia,unspecified,,
+spill_leak,10/6/18,Propellant slurry,200,lbs,
+spill_leak,12/11/18,Water containing nitrocellulose,56700,gal,
+spill_leak,4/25/19,Wastewater containing nitroglycerin,unspecified,,
+fire,6/6/19,Fire,,,7/9/20
+spill_leak,7/8/19,Industrial wastewater,unknown,,
+spill_leak,8/22/19,Nitric acid,110,gal,
+spill_leak,9/16/19,Nitric acid/sulfuric acid mixture,161,gal,
+spill_leak,7/7/20,"Antifreeze, oil, other chemicals",unknown,,
+overflow,11/11/20,Industrial processed wastewater & sewage,1000,gal,
 spill_leak,12/28/20,Diesel fuel,2300,gal,2/4/21
-spill_leak,3/29/21,diethyl ether,800,gal,5/13/21
+spill_leak,3/29/21,Diethyl ether,800,gal,5/13/21
