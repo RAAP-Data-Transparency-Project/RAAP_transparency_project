@@ -26,7 +26,7 @@ library(tidyverse)
 
 # Read in data
 
-incident_data <- read_csv("data_raw/incident_data_test.csv")
+incident_data <- read_csv("incident_history/data_raw/incident_data_test.csv")
 
 
 # Create Timeline Plot ----------------------------------------------------
