@@ -2,7 +2,7 @@
 
 # File Name: tri_data_plot.R
 # Created: 22 Jul 2021 by Tyler Weiglein
-# Last Modified: 29 Jul 2021 by Tyler Weiglein
+# Last Modified: 03 Aug 2021 by Tyler Weiglein
 
 # Purpose: To create a plot for Toxic Release Inventory (TRI) data for RAAP.
 
@@ -40,14 +40,14 @@ tri_data <- tri_data %>%
   mutate(media = ordered(as.factor(media), levels = c("air", "water", "land", "off_site"))) %>% 
   group_by(year, media) %>% 
   summarize(tot_release_lbs = sum(release_lbs)) %>% 
-  filter(year >= 2005)
+  filter(year >= 2010)
 
 tri_data_plot <- ggplot(tri_data, aes(x = year, y = tot_release_lbs, fill = media)) +
   geom_bar(position = position_stack(reverse = TRUE), stat = "identity") +
   scale_fill_manual(labels = c("Air", "Water", "Land", "Off-Site"),
                     values = c("#CCE3FC", "#1A6692", "#395420", "#DA6D1D")) +
   scale_y_continuous(labels = comma) +
-  labs(title = "RAAP TRI Releases by Year (2005-2019)",
+  labs(title = "RAAP TRI Releases by Year (2010-2019)",
        x = "Year",
        y = "Releases (lb)",
        fill = "Key:") +
