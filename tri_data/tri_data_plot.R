@@ -46,6 +46,7 @@ tri_data_plot <- ggplot(tri_data, aes(x = year, y = tot_release_lbs, fill = medi
   geom_bar(position = position_stack(reverse = TRUE), stat = "identity") +
   scale_fill_manual(labels = c("Air", "Water", "Land", "Off-Site"),
                     values = c("#CCE3FC", "#1A6692", "#395420", "#DA6D1D")) +
+  scale_x_continuous(breaks = seq(2010, 2019, by = 1)) +
   scale_y_continuous(labels = comma) +
   labs(title = "RAAP TRI Releases by Year (2010-2019)",
        x = "Year",
