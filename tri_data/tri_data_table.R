@@ -2,7 +2,7 @@
 
 # File Name: tri_data_table.R
 # Created: 29 Jul 2021 by Tyler Weiglein
-# Last Modified: 29 Jul 2021 by Tyler Weiglein
+# Last Modified: 16 Aug 2021 by Tyler Weiglein
 
 # Purpose: To create a table for Toxic Release Inventory (TRI) data for RAAP.
 
@@ -60,7 +60,7 @@ tri_data_table <- tri_data_table %>%
                names_to = "media",
                values_to = "release_lbs") %>% 
   mutate(media = as.factor(media)) %>% 
-  filter(year >= 2010,
+  filter(year == 2019,
          release_lbs > 0) %>% 
   group_by(chem_name, media) %>% 
   summarize(tot_release_lbs = sum(release_lbs)) %>% 
@@ -68,6 +68,6 @@ tri_data_table <- tri_data_table %>%
   mutate(pct_release = tot_release_lbs / sum(tot_release_lbs) * 100) %>% 
   arrange(desc(pct_release))
 
-colnames(tri_data_table) <- c("Chemical Name", "Release Medium", "Total Releases [2010-2019] (lb)", "Relative Contribution [2010-2019] (%)")
+colnames(tri_data_table) <- c("Chemical Name", "Release Medium", "Amount Released (lb)", "Relative Contribution (%)")
 
 write.xlsx(tri_data_table, "tri_data/table/tri_data_table.xlsx")
