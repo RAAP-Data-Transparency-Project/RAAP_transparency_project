@@ -2,7 +2,7 @@
 
 # File Name: incident_timeline_plot.R
 # Created: 08 Jul 2021 by Tyler Weiglein
-# Last Modified: 16 Aug 2021 by Tyler Weiglein
+# Last Modified: 14 Oct 2021 by Tyler Weiglein
 
 # Purpose: To create a timeline plot for incidents at RAAP.
 
@@ -25,7 +25,7 @@ library(tidyverse)
 
 # Read in data
 
-incident_data <- read_csv("incident_history/data_raw/RAAP_incident_data_2018_Aug2021.csv")
+incident_data <- read_csv("incident_history/data_raw/raap_incident_data_2018_sep2021.csv")
 
 
 # Create Timeline Plot ----------------------------------------------------
@@ -108,6 +108,10 @@ incident_data$description <- str_replace(incident_data$description,
 incident_data$description <- str_replace(incident_data$description,
                                          "Acidic wastewater",
                                          "Acidic\nwastewater")
+
+incident_data$description <- str_replace(incident_data$description,
+                                         "Industrial process wastewater",
+                                         "Industrial process\nwastewater")
 
 # Create positions and directions data frame
 
