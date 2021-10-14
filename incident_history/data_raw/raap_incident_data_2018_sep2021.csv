@@ -1,0 +1,36 @@
+incident_type,release_type,date_occurred,description,amount,units,deq_ir_num,link_to_vdeq_pollution_report,in_nrc_database,nrc_seqnos,date_public_notified,link_to_public_notification,notes
+Release,Sediment,1/4/18,Muddy water,NA,NA,119150,https://portal.deq.virginia.gov/prep/Report/Details?Id=119150,No,NA,NA,NA,
+Release,Sediment,2/14/18,Muddy water,"630,000",gal,124332,https://portal.deq.virginia.gov/prep/Report/Details?Id=124332,No,NA,NA,NA,
+Release,Other,3/6/18,Sludge,NA,NA,126074,https://portal.deq.virginia.gov/prep/Report/Details?Id=126074,No,NA,NA,NA,"Release type listed as ""other"" because unclear whether sludge is from treatment of sanitary sewage or industrial wastewater"
+Fire,Fire,6/11/18,Fire,NA,NA,137653,https://portal.deq.virginia.gov/prep/Report/Details?Id=137653,No,NA,6/11/18,https://www.facebook.com/RadfordArmyAmmunitionPlant/posts/2030968626975226,
+Release,Sediment,6/12/18,Muddy water,"120,000",gal,138057,https://portal.deq.virginia.gov/prep/Report/Details?Id=138057,No,NA,NA,NA,
+Release,Sediment,7/9/18,Muddy water,NA,NA,141073,https://portal.deq.virginia.gov/prep/Report/Details?Id=141073,No,NA,NA,NA,
+Release,Sediment,8/2/18,Muddy water,"4,000",gal,145376,https://portal.deq.virginia.gov/prep/Report/Details?Id=145376,No,NA,NA,NA,
+Release,Chemical,9/4/18,Anhydrous ammonia,300,lb,154940,https://portal.deq.virginia.gov/prep/Report/Details?Id=154940,Yes,1223632,9/5/18,https://www.facebook.com/RadfordArmyAmmunitionPlant/posts/2202276946511059,
+Release,Chemical,10/5/18,Propellant slurry,200,lb,155213,https://portal.deq.virginia.gov/prep/Report/Details?Id=155213,Yes,1226638,NA,NA,"Recorded incident date (10/06/2018) after reporting date (10/05/2018), using reporting date for incident date"
+Release,Chemical,10/12/18,Oil/Hydraulic oil,NA,NA,157075,https://portal.deq.virginia.gov/prep/Report/Details?Id=157075,No,NA,NA,NA,
+Release,Other,10/12/18,Crowder tank flooding,NA,NA,155675,https://portal.deq.virginia.gov/prep/Report/Details?Id=155675,Yes,1228530,NA,NA,
+Release,Other,10/14/18,Sewage,NA,NA,155913,https://portal.deq.virginia.gov/prep/Report/Details?Id=155913,No,NA,NA,NA,
+Release,Chemical,12/6/18,Caustic rinse water (pH ~ 11),60,gal,188615,https://portal.deq.virginia.gov/prep/Report/Details?Id=188615,No,NA,NA,NA,Amount from Site Summary Notes
+Release,Other,12/11/18,Reclamation water,"56,700",gal,188858,https://portal.deq.virginia.gov/prep/Report/Details?Id=188858,No,NA,NA,NA,Amount from Closure Comment
+Release,Chemical,2/24/19,"Industrial wastewater (""minute"" quantities of nitrocellulose)",NA,NA,195977,https://portal.deq.virginia.gov/prep/Report/Details?Id=195977,No,NA,NA,NA,
+Release,Chemical,4/25/19,Industrial wastewater (77 ppm nitroglycerin),"10,260",gal,204435,https://portal.deq.virginia.gov/prep/Report/Details?Id=204435,Yes,1243717,NA,NA,Nitroglycerin concentration from Original Call Material Description
+Release,Other,5/10/19,Brine water,15,gal,205978,https://portal.deq.virginia.gov/prep/Report/Details?Id=205978,No,NA,NA,NA,
+Fire,Fire,6/6/19,Fire,NA,NA,NA,NA,No,NA,6/6/19,https://www.facebook.com/RadfordArmyAmmunitionPlant/posts/2784159241656157,Not in NRC or DEQ PReP databases
+Release,Chemical,7/8/19,Industrial wastewater,NA,NA,291484,https://portal.deq.virginia.gov/prep/Report/Details?Id=291484,No,NA,NA,NA,Amount unclear in DEQ PReP report
+Release,Sediment,7/9/19,Muddy water,NA,NA,291447,https://portal.deq.virginia.gov/prep/Report/Details?Id=291447,No,NA,NA,NA,
+Release,Chemical,8/22/19,Nitric acid,110,gal,291894,https://portal.deq.virginia.gov/prep/Report/Details?Id=291894,Yes,1256015,NA,NA,
+Release,Other,9/12/19,Industrial residuals,NA,NA,292110,https://portal.deq.virginia.gov/prep/Report/Details?Id=292110,No,NA,NA,NA,
+Release,Chemical,9/16/19,Nitric acid/sulfuric acid mixture,161,gal,292120,https://portal.deq.virginia.gov/prep/Report/Details?Id=292120,Yes,1258338,NA,NA,
+Release,Sediment,10/17/19,Muddy water,NA,NA,292468,https://portal.deq.virginia.gov/prep/Report/Details?Id=292468,No,NA,NA,NA,
+Release,Sediment,1/3/20,Muddy water,NA,NA,293289,https://portal.deq.virginia.gov/prep/Report/Details?Id=293289,No,NA,NA,NA,
+Release,Other,2/7/20,Sewage,NA,NA,293731,https://portal.deq.virginia.gov/prep/Report/Details?Id=293731,No,NA,NA,NA,
+Release,Sediment,10/28/20,Muddy water,NA,NA,297147,https://portal.deq.virginia.gov/prep/Report/Details?Id=297147,No,NA,NA,NA,
+Release,Chemical,11/11/20,Industrial process wastewater and sewage,"1,000",gal,297367,https://portal.deq.virginia.gov/prep/Report/Details?Id=297367,No,NA,NA,NA,
+Release,Chemical,12/28/20,Diesel fuel,"2,300",gal,297843,https://portal.deq.virginia.gov/prep/Report/Details?Id=297843,No,NA,2/4/21,https://www.jmc.army.mil/Radford/docs/Radford_4_Feb_2021_Public%20Meeting_FINAL.pdf,
+Release,Chemical,3/29/21,Diethyl ether,800,gal,298953,https://portal.deq.virginia.gov/prep/Report/Details?Id=298953,Yes,1301508,5/13/21,https://www.jmc.army.mil/Radford/docs/Radford_May%202021%20Public%20Meeting_DRAFT%20v.6.pdf,Discrepency in amount reported in VDEQ PReP report (108 lb [~17 gal]) and community meeting presentation (~800 gal)
+Release,Sediment,5/24/21,Muddy water,NA,NA,299626,https://portal.deq.virginia.gov/prep/Report/Details?Id=299626,No,NA,NA,NA,
+Release,Chemical,6/15/21,Acidic wastewater,"2,000",gal,299872,https://portal.deq.virginia.gov/prep/Report/Details?Id=299872,Yes,1307815,NA,NA,
+Release,Chemical,8/2/21,Hydraulic oil,30,gal,300408,https://portal.deq.virginia.gov/prep/Report/Details?Id=300408,Yes,1312522,NA,NA,
+Release,Other,8/10/21,Brine water,500,gal,300834,https://portal.deq.virginia.gov/prep/Report/Details?Id=300834,No,NA,NA,NA,
+Release,Chemical,9/22/21,Industrial process wastewater,NA,NA,300963,https://portal.deq.virginia.gov/prep/Report/Details?Id=300963,No,NA,NA,NA,
