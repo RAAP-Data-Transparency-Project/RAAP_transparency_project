@@ -2,7 +2,7 @@
 
 # File Name: incident_timeline_plot.R
 # Created: 08 Jul 2021 by Tyler Weiglein
-# Last Modified: 14 Oct 2021 by Tyler Weiglein
+# Last Modified: 14 Jun 2022 by Tyler Weiglein
 
 # Purpose: To create a timeline plot for incidents at RAAP.
 
@@ -25,7 +25,9 @@ library(tidyverse)
 
 # Read in data
 
-incident_data <- read_csv("incident_history/data_raw/raap_incident_data_2018_sep2021.csv")
+date_range <- "2018_jun2022"
+
+incident_data <- read_csv(paste0("incident_history/data_raw/raap_incident_data_", date_range,".csv"))
 
 
 # Create Timeline Plot ----------------------------------------------------
@@ -63,7 +65,7 @@ incident_data$description <- str_replace(incident_data$description,
 
 incident_data$description <- str_replace(incident_data$description,
                                          "Reclamation water",
-                                         "Reclamation\nwater")
+                                         "Reclam.\nwater")
 
 incident_data$description <- str_replace(incident_data$description,
                                          "Industrial wastewater \\(\"minute\" quantities of nitrocellulose\\)",
@@ -112,6 +114,10 @@ incident_data$description <- str_replace(incident_data$description,
 incident_data$description <- str_replace(incident_data$description,
                                          "Industrial process wastewater",
                                          "Industrial process\nwastewater")
+
+incident_data$description <- str_replace(incident_data$description,
+                                         "Low pH at outfall",
+                                         "Low pH\nat outfall")
 
 # Create positions and directions data frame
 
@@ -234,4 +240,4 @@ timeline_plot <- ggplot(incident_data,
 
 # Save figure
 
-ggsave("incident_history/fig/incident_timeline_plot.png", timeline_plot, width = 12, height = 6, units = "in", dpi = 1200)
+ggsave(paste0("incident_history/fig/incident_timeline_plot", date_range, ".png"), timeline_plot, width = 12, height = 6, units = "in", dpi = 1200)
