@@ -2,7 +2,7 @@
 
 # File Name: tri_data_table.R
 # Created: 29 Jul 2021 by Tyler Weiglein
-# Last Modified: 16 Aug 2021 by Tyler Weiglein
+# Last Modified: 15 Jun 2022 by Tyler Weiglein
 
 # Purpose: To create a table for Toxic Release Inventory (TRI) data for RAAP.
 
@@ -21,10 +21,16 @@ library(tidyverse)
 
 # Read in data
 
-tri_data <- read_csv("tri_data/data_raw/RAAP_TRI_data.csv")
+download_date <- "15Jun2022"
+
+tri_data <- read_csv(paste0("tri_data/data_raw/RAAP_TRI_data_", download_date, ".csv"))
 
 
 # Create TRI Data Table ---------------------------------------------------
+
+table_year <- 2020
+
+colnames(tri_data) <- gsub("^(.*??\\_TRI_FORM_R_BR_EZ.)", "", colnames(tri_data))
 
 tri_data_table <- tri_data %>% 
   select(c(CHEM_NAME, REPORTING_YEAR, AIR_TOTAL_RELEASE, WATER_TOTAL_RELEASE, LAND_TOTAL_RELEASE, TOTAL_OFF_SITE_RELEASE)) %>%
@@ -48,11 +54,11 @@ tri_data_table$chem_name <- str_replace_all(tri_data_table$chem_name,
                 "Sulfuric acid")
 
 tri_data_table$chem_name <- str_replace_all(tri_data_table$chem_name,
-                "LEAD  and LEAD COMPOUNDS",
+                "Lead  And Lead Compounds",
                 "Lead compounds")
 
 tri_data_table$chem_name <- str_replace_all(tri_data_table$chem_name,
-                "COPPER  and COPPER COMPOUNDS",
+                "Copper  And Copper Compounds",
                 "Copper compounds")
 
 tri_data_table <- tri_data_table %>% 
@@ -60,7 +66,7 @@ tri_data_table <- tri_data_table %>%
                names_to = "media",
                values_to = "release_lbs") %>% 
   mutate(media = as.factor(media)) %>% 
-  filter(year == 2019,
+  filter(year == table_year,
          release_lbs > 0) %>% 
   group_by(chem_name, media) %>% 
   summarize(tot_release_lbs = sum(release_lbs)) %>% 
@@ -70,4 +76,4 @@ tri_data_table <- tri_data_table %>%
 
 colnames(tri_data_table) <- c("Chemical Name", "Release Medium", "Amount Released (lb)", "Relative Contribution (%)")
 
-write.xlsx(tri_data_table, "tri_data/table/tri_data_table.xlsx")
+write.xlsx(tri_data_table, paste0("tri_data/table/tri_data_table_", download_date, ".xlsx"))
