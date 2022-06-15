@@ -2,7 +2,7 @@
 
 # File Name: tri_data_plot.R
 # Created: 22 Jul 2021 by Tyler Weiglein
-# Last Modified: 14 Jan 2022 by Tyler Weiglein
+# Last Modified: 15 Jun 2022 by Tyler Weiglein
 
 # Purpose: To create a plot for Toxic Release Inventory (TRI) data for RAAP.
 
@@ -22,7 +22,7 @@ library(tidyverse)
 
 # Read in data
 
-tri_data <- read_csv("tri_data/data_raw/RAAP_TRI_data_14Jan2022.csv")
+tri_data <- read_csv("tri_data/data_raw/RAAP_TRI_data_15Jun2022.csv")
 
 
 # Create TRI Data Plot ----------------------------------------------------
@@ -56,4 +56,4 @@ tri_data_plot <- ggplot(tri_data, aes(x = year, y = tot_release_lbs, fill = medi
        fill = "Key:") +
   theme_bw()
   
-ggsave("tri_data/fig/tri_data_plot_14Jan2022.png", tri_data_plot, width = 8, height = 5, units = "in", dpi = 600)
+ggsave("tri_data/fig/tri_data_plot_15Jun2022.png", tri_data_plot, width = 8, height = 5, units = "in", dpi = 600)
